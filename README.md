@@ -5,5 +5,7 @@ This is a location for most of the pytorch vision processing code. I'll be updat
 dependencies for this are
 
 The latest stable Pytorch build
+
 Python 3.7
+
 CUDA 9.0
