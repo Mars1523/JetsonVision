@@ -8,4 +8,5 @@ This code is styled using [black](https://github.com/ambv/black).
 
 - Python 3
 - Latest PyTorch
+- Tensorflow
 - CUDA 9.0
