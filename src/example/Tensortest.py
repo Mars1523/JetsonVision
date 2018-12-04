@@ -1,4 +1,5 @@
 import tensorflow as tf
+
 """@author: Skeletor
 this is a basic single-layer perceptron
 It'll have constant bias input and step 
@@ -12,18 +13,8 @@ the 4 possible operand pairs as inputs
 and the respective results as outputs"""
 T, F = 1, -1
 bias = 1
-trainingin = [
-  [T, T, bias],
-  [T, F, bias],
-  [F, T, bias],
-  [F, F, bias],
-]
-trainingout = [
- [T],
- [F],
- [F],
- [F],
-]
+trainingin = [[T, T, bias], [T, F, bias], [F, T, bias], [F, F, bias]]
+trainingout = [[T], [F], [F], [F]]
 
 
 """Since all the above training data will be constant
@@ -58,11 +49,11 @@ meansquarederror = tf.reduce_mean(tf.square(error))
 """The eval of some tensor functions can update variables
 such as the tensor of weights.  First,based off of error
 the adjustment is calculated and added"""
-delta = tf.matmul(trainingin, error,  transpose_a=True)
+delta = tf.matmul(trainingin, error, transpose_a=True)
 train = tf.assign(w1, tf.add(w1, delta))
 """Just initaliazing the tensorflow session"""
 sess = tf.Session()
-sess.run(tf.initialize_all_variables)
+sess.run(tf.initializers.global_variables())
 """Now some of you may question why I'm using epochs
 A step for a NN is one gradient upgrade
 A epoch is one full cycle through the training data
@@ -75,6 +66,8 @@ err, target = 1, 0
 epoch, max_epochs = 0, 20
 
 while err > target and epoch < max_epochs:
-  epoch += 1
-  err = sess.run([meansquarederror, train])
-  print('epoch:', epoch, 'mse:', err)
+    epoch += 1
+    err, _ = sess.run([meansquarederror, train])
+    print("epoch: ", epoch, "mse: ", err)
+
+
