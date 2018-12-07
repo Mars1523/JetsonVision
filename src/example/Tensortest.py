@@ -41,14 +41,14 @@ def step(x):
 
 
 """These are calculations of the output,error
- and mean squared error of the model"""
+ and mean squared error of the model.  This is the fowards pass"""
 output = step(tf.matmul(trainingin, w1))
 output1 = tf.cast(output, tf.int32)
 error = tf.subtract(trainingout, output1)
 meansquarederror = tf.reduce_mean(tf.square(error))
 """The eval of some tensor functions can update variables
 such as the tensor of weights.  First,based off of error
-the adjustment is calculated and added"""
+the adjustment is calculated and added  This is the backwards pass"""
 delta = tf.matmul(trainingin, error, transpose_a=True)
 train = tf.assign(w1, tf.add(w1, delta))
 """Just initaliazing the tensorflow session"""
