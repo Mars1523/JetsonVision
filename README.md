@@ -1,6 +1,6 @@
-# PyTorchVision
+# TensorFlow Vision
 
-This is the location for most of the pytorch vision processing code. I'll be updating it with what I'm working on, so other people can keep up.
+This is the location for most of the NN code. I'll be updating it with what I'm working on, so other people can keep up.
 
 This code is styled using [black](https://github.com/ambv/black).
 
