@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>n02106662_23360.jpg</filename>
+	<path>C:\tensorflow 1\models\research\object_detection\images\test\n02106662_23360.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>360</width>
+		<height>238</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>germandog</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>15</ymin>
+			<xmax>307</xmax>
+			<ymax>223</ymax>
+		</bndbox>
+	</object>
+</annotation>
