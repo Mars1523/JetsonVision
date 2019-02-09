@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>n02106662_11620.jpg</filename>
+	<path>C:\tensorflow 1\models\research\object_detection\images\train\n02106662_11620.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>533</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>germandog</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>175</ymin>
+			<xmax>334</xmax>
+			<ymax>800</ymax>
+		</bndbox>
+	</object>
+</annotation>
