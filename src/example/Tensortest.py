@@ -50,7 +50,7 @@ meansquarederror = tf.reduce_mean(tf.square(error))
 such as the tensor of weights.  First,based off of error
 the adjustment is calculated and added  This is the backwards pass"""
 delta = tf.matmul(trainingin, error, transpose_a=True)
-train = tf.assign(w1, tf.add(w1, delta))
+train = tf.assign(w1, tf.add(w1, delta))    
 """Just initaliazing the tensorflow session"""
 sess = tf.Session()
 sess.run(tf.initializers.global_variables())

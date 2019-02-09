@@ -1,0 +1,14 @@
+ 	<segmented>0</segmented>
+	<object>
+		<name>target</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>71</xmin>
+			<ymin>101</ymin>
+			<xmax>201</xmax>
+			<ymax>156</ymax>
+		</bndbox>
+	</object>
+</annotation>
