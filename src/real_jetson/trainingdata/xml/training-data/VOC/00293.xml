@@ -1,0 +1,26 @@
+<annotation>
+	<folder>xml</folder>
+	<filename>00293.jpg</filename>
+	<path>/home/mars/trainingdata/xml/00293.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>target</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>67</xmin>
+			<ymin>100</ymin>
+			<xmax>192</xmax>
+			<ymax>154</ymax>
+		</bndbox>
+	</object>
+</annotation>

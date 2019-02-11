@@ -1,7 +1,7 @@
 <annotation>
 	<folder>human data</folder>
 	<filename>data0048.jpg</filename>
-	<path>/home/trainingdata/human data/data0048.jpg</path>
+	<path>/home/jetsoncode/trainingdata/human-data/data0048.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
