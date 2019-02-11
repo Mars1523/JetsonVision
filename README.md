@@ -10,3 +10,5 @@ This code is styled using [black](https://github.com/ambv/black).
 - Latest PyTorch
 - Tensorflow
 - CUDA 9.0
+- YOLO v3
+- Darknet
